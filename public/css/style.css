@@ -47,8 +47,57 @@ ul li {
 
 #contact {
     background-color: rgb(240, 236, 236);
+    box-sizing: border-box;
+
 }
 
+.mission {
+    margin-top: 2rem;
+    text-align: center;
+}
+.mission h2
+{
+    font-weight: 600;
+    color: #EE3932;
+}
+
+.mission p {
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 80%;
+    line-height: 1.6;
+    text-align: justify;
+}
+.vision-img {
+   margin: 2rem 0;
+}
+.vision-box {
+    width: 33%;
+    height: auto;
+    display: inline-block;
+}
+.vision-box img {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.vision-box p,h3 {
+    text-align: center;
+}
+.vision-box p {
+    font-weight: 300;
+    font-size: large;
+    color: black;
+    text-align: justify;
+}
+.skewed {
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 40px;
+    background: #efeff5;
+    z-index: 0;
+    transform: skewY(1.5deg);
+}
 
 
 .infor
@@ -65,6 +114,10 @@ ul li {
     margin-top: 2rem;
 }
 
+iframe {
+   padding-bottom: 1rem;
+}
+
 footer{
     height: auto;
     text-align: center;
@@ -73,7 +126,7 @@ footer{
 footer h5{
     color: #EE3932;
     padding: 1rem;
-    font-weight: 100;
+    font-weight: 500;
     font-size: medium;
 }
 ul li::after {
@@ -113,7 +166,31 @@ ul li:hover::after {
         height: auto;
         top: 80%;
         left: 70%;
+    }   
+}
+
+@media only screen and (max-width: 995px)
+{
+    .vision-box {
+        width: 30%;
+        height: auto;
+        display: inline-block;
     }
-    
-      
+
+    .vision-box img {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    .vision-box p {
+        font-weight: 300;
+        font-size: 14px;
+        color: black;
+        text-align: center;
+    }
+
+    .vision-box h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
 }
